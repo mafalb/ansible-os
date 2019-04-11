@@ -1,0 +1,8 @@
+---
+
+# https://access.redhat.com/security/cve/cve-2018-1113
+- name: nologin is not in /etc/shells
+  lineinfile:
+    regexp: "/nologin$"
+    path: /etc/shells
+    state: absent

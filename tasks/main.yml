@@ -1,0 +1,4 @@
+---
+- name: include tasks for /etc/shells
+  include_tasks:
+    file: shells.yml
