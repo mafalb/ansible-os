@@ -1,4 +1,6 @@
 ---
 - name: include tasks for /etc/shells
-  include_tasks:
-    file: shells.yml
+  loop:
+    - shells.yml
+    - mds.yml
+  include_tasks: "{{ item }}"

@@ -1,0 +1,8 @@
+---
+- name: mds check script is present
+  copy:
+    src: cve-2018-12130--2019-05-14-1319.sh
+    dest: /usr/local/sbin/
+    mode: 00755
+    owner: root
+
