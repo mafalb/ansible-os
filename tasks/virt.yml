@@ -1,0 +1,8 @@
+---
+
+- name: virt-what is present
+  package:
+    name: virt-what
+    state: present
+
+...

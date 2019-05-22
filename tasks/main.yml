@@ -3,4 +3,5 @@
   loop:
     - shells.yml
     - mds.yml
+    - virt.yml
   include_tasks: "{{ item }}"
